@@ -13,6 +13,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <javax.cache-api.version>1.1.1</javax.cache-api.version>
         <jedis.version>3.5.2</jedis.version>
+        <lettuce.version>6.1.0.RELEASE</lettuce.version>
     </properties>
 
     <dependencies>
@@ -26,6 +27,13 @@
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
             <version>${jedis.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.lettuce</groupId>
+            <artifactId>lettuce-core</artifactId>
+            <version>${lettuce.version}</version>
+            <optional>true</optional>
         </dependency>
 
     </dependencies>
